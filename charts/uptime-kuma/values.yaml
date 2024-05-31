@@ -124,13 +124,13 @@ readinessProbe:
 volume:
   enabled: true
   accessMode: ReadWriteOnce
-  size: 1Gi
+  size: 2Gi
   # If you want to use a storage class other than the default, uncomment this
   # line and define the storage class name
   # storageClassName:
   # Reuse your own pre-existing PVC.
   existingClaim: ""
-  storageClassName: mayastor-2
+  storageClassName: "openebs-jiva-csi-default" #mayastor-2
 
 # -- A list of additional volumes to be added to the pod
 additionalVolumes:

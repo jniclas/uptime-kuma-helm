@@ -1,6 +1,7 @@
 # Deployment
 
-Update: `helm upgrade prod charts/uptime-kuma -n kuma`
+Install: `helm -n kuma install prod charts/uptime-kuma -f charts/uptime-kuma/values.yaml`
+Update: `helm -n kuma upgrade prod charts/uptime-kuma  -f charts/uptime-kuma/values.yaml`
 
 # Uptime-Kuma Helm Chart
 
