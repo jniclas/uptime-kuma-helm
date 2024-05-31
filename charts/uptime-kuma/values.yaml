@@ -100,8 +100,8 @@ resources:
   # resources, such as Minikube. If you do want to specify resources, uncomment the following
   # lines, adjust them as necessary, and remove the curly braces after 'resources:'.
   limits:
-    cpu: 200m
-    memory: 256Mi
+    cpu: 300m
+    memory: 756Mi
   requests:
     cpu: 200m
     memory: 256Mi
@@ -124,13 +124,13 @@ readinessProbe:
 volume:
   enabled: true
   accessMode: ReadWriteOnce
-  size: 4Gi
+  size: 1Gi
   # If you want to use a storage class other than the default, uncomment this
   # line and define the storage class name
   # storageClassName:
   # Reuse your own pre-existing PVC.
   existingClaim: ""
-  storageClassName: openebs-jiva-csi-default
+  storageClassName: mayastor-2
 
 # -- A list of additional volumes to be added to the pod
 additionalVolumes:

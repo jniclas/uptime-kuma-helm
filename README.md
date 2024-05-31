@@ -1,3 +1,7 @@
+# Deployment
+
+Update: `helm upgrade prod charts/uptime-kuma -n kuma`
+
 # Uptime-Kuma Helm Chart
 
 [![License](https://img.shields.io/badge/License-GPL--3.0-blue.svg)](https://opensource.org/license/gpl-3-0)
