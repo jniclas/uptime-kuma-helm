@@ -6,7 +6,7 @@ image:
   repository: louislam/uptime-kuma
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "1.23.11-debian"
+  tag: "1-debian"
 
 imagePullSecrets: []
 nameOverride: ""
@@ -130,7 +130,7 @@ volume:
   # storageClassName:
   # Reuse your own pre-existing PVC.
   existingClaim: ""
-  storageClassName: "openebs-jiva-csi-default" #mayastor-2
+  storageClassName: "microk8s-hostpath" #mayastor-2
 
 # -- A list of additional volumes to be added to the pod
 additionalVolumes:
