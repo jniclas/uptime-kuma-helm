@@ -24,7 +24,8 @@ serviceAccount:
   # If not set and create is true, a name is generated using the fullname template
   name: ""
 
-podAnnotations: {}
+podAnnotations: 
+  linkerd.io/inject: enabled
 podLabels:
   {}
   # app: uptime-kuma
@@ -124,13 +125,13 @@ readinessProbe:
 volume:
   enabled: true
   accessMode: ReadWriteOnce
-  size: 2Gi
+  size: 1Gi
   # If you want to use a storage class other than the default, uncomment this
   # line and define the storage class name
   # storageClassName:
   # Reuse your own pre-existing PVC.
   existingClaim: ""
-  storageClassName: "microk8s-hostpath" #mayastor-2
+  storageClassName: "openebs-jiva-csi-default" #mayastor-2
 
 # -- A list of additional volumes to be added to the pod
 additionalVolumes:
