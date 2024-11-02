@@ -24,8 +24,8 @@ serviceAccount:
   # If not set and create is true, a name is generated using the fullname template
   name: ""
 
-podAnnotations: 
-  linkerd.io/inject: enabled
+podAnnotations: {}
+  # linkerd.io/inject: enabled
 podLabels:
   {}
   # app: uptime-kuma
@@ -131,7 +131,7 @@ volume:
   # storageClassName:
   # Reuse your own pre-existing PVC.
   existingClaim: ""
-  storageClassName: "openebs-jiva-csi-default" #mayastor-2
+  storageClassName: "mayastor-3" #mayastor-2
 
 # -- A list of additional volumes to be added to the pod
 additionalVolumes:
